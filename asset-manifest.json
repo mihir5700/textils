@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/textils/static/css/main.3c2e357d.css",
-    "main.js": "/textils/static/js/main.a8a85546.js",
+    "main.js": "/textils/static/js/main.21a58bfe.js",
     "static/js/787.09975a1a.chunk.js": "/textils/static/js/787.09975a1a.chunk.js",
     "index.html": "/textils/index.html",
     "main.3c2e357d.css.map": "/textils/static/css/main.3c2e357d.css.map",
-    "main.a8a85546.js.map": "/textils/static/js/main.a8a85546.js.map",
+    "main.21a58bfe.js.map": "/textils/static/js/main.21a58bfe.js.map",
     "787.09975a1a.chunk.js.map": "/textils/static/js/787.09975a1a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c2e357d.css",
-    "static/js/main.a8a85546.js"
+    "static/js/main.21a58bfe.js"
   ]
 }
