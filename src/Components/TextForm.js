@@ -50,26 +50,36 @@ export default function TextForm(props) {
                 <textarea className="form-control" placeholder="Enter Your Text Here" value={text} onChange={handleOnChange} id="textBox" rows="8"></textarea>
             </div>
             <div className="d-flex">
-                <button type="button" className="btn btn-info mx-1" onClick={handleUpperClick}>UpperCase</button>
-                <button type="button" className="btn btn-info mx-1" onClick={handleLowerClick}>LowerCase</button>
-                <button type="button" className="btn btn-info mx-1" onClick={handleXSpaceClick}>X-Space Cutter</button>
-                <button type="button" className="btn btn-info mx-1" onClick={handleClear}>Clear</button>
-                <button type="button" className="btn btn-info mx-1" onClick={handleCopy}>Copy</button>
+
+                <img src="https://cdn-icons-png.flaticon.com/512/3665/3665909.png" onClick={handleUpperClick} alt="" height="40" className={`shad-${props.icon} mx-2`} width="40"/>
+                
+
+                <img src="https://cdn-icons-png.flaticon.com/512/3665/3665887.png" onClick={handleLowerClick}alt="" height="40" className={`shad-${props.icon} mx-2`} width="40" />
+                
+                <img src="https://img.icons8.com/color/48/000000/scissors.png" className={`shad-${props.icon} mx-2`} onClick={handleXSpaceClick} alt="" height="40" width="40" />
+                
+                <img src="https://cdn-icons-png.flaticon.com/512/2015/2015014.png" alt="" height="35" width="35" className={`shad-${props.icon} mx-2`} onClick={handleClear}/>
+
+                <img src="https://img.icons8.com/3d-fluency/344/documents.png" onClick={handleCopy} alt="" height="35" width="35" className={`shad-${props.icon} mx-2`} border border-light />
+               
             </div>
 
             {/* Summary of Text Entered */}
-            <div className="container my-3">
-                <h2 className='mb-2'>Input Summary</h2>
+            <div className="container my-4">
+                <h2 className='mb-1'>Input Summary</h2>
                 <span className="m-2" id="text_summary">
-                    {text.split(" ").length} word(s) | {text.length} characters
+                    {text.split(/\s+/).length} word(s) | {text.length} characters
                 </span>
             </div>
 
             <div className="container my-3">
                 <h3 className='mb-2'>Preview Window</h3>
                 <div className="container-fluid border outputBox" id='outBox'>
-                    <div className="m-3">
-                        {text}
+                    <div className="m-3" id='output_window'>
+                        {
+                        text.length===0?
+                        "Type something above to preview it here"
+                        :text}
                     </div>
                 </div>
             </div>

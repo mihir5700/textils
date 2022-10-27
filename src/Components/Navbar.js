@@ -24,11 +24,6 @@ export default function Navbar(props) {
               <Link to="/about" className="nav-link">About</Link>
             </li>
 
-            {/* CONTACTS */}
-            <li className="nav-item">
-              <a className="nav-link" href="/">Contacts</a>
-            </li>
-
           </ul>
           <div className="modeBox mt-2">
             <span className="material-symbols-rounded mx-4" onClick={props.toggleMode}>

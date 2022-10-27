@@ -13,6 +13,21 @@
   'opsz' 48
 }
 
+.shad-dark:hover{
+  box-shadow: 0 0 10px rgb(56, 31, 47);
+  border-radius: 40px;
+  padding: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.shad-light:hover{
+  border-radius: 40px;
+  padding: 8px;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgb(255, 230, 243);
+  cursor: pointer;
+}
+
 .headingBox{
   padding-left: 0px;
 }
@@ -27,17 +42,17 @@
 }
 
 .navbar-light{
-  background-color: rgb(241, 255, 248);
+  background-color: rgb(255, 230, 243);
   position: sticky;
   z-index: 9999;
   top: 0;
-  border-bottom: 1px solid rgb(152, 255, 204);
-  box-shadow: 0 2px 10px rgb(141, 160, 150);
+  box-shadow: 0 2px 10px rgb(184, 142, 169);
   color: rgb(25, 40, 33);
 }
 
 .navbar-dark{
-  background-color: rgb(31, 53, 56);
+
+  background-color: rgb(56, 31, 47);
   color: white;
   position: sticky;
   z-index: 9999;
@@ -52,7 +67,7 @@ a{
 #textBox{
   resize: none;
   overflow-y: scroll;
-  background-color: rgb(241, 255, 248);
+  background-color: rgb(255, 241, 249);
 }
 
 .outputBox{
@@ -60,7 +75,7 @@ a{
   overflow-y: scroll;
   width: 101%;
   border-radius: 5px;
-  background-color: rgb(241, 255, 248);
+  background-color: rgb(255, 241, 249);
 }
 
 .container-about{
